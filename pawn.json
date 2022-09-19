@@ -1,0 +1,22 @@
+{
+	"user": "SrDivuOfficial",
+    "repo": "textdraw-streamer",
+    "include_path": "src",
+    "resources": [
+        {
+            "name": "^textdrawstreamer-(.*)-linux.tar.gz$",
+            "platform": "linux",
+            "archive": true,
+            "plugins": ["textdraw-streamer.so"]
+        },
+        {
+            "name": "^textdrawstreamer-(.*)-win32.zip$",
+            "platform": "windows",
+            "archive": true,
+            "plugins": ["textdraw-streamer.dll"]
+        }
+    ],
+    "runtime": {
+        "plugins": ["SrDivuOfficial/textdraw-streamer"]
+    }
+}
